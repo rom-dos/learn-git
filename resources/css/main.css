@@ -33,3 +33,25 @@ footer {
   text-align: center;
   margin: auto;
 }
+
+.notes {
+  background-color: #fdb177;
+  padding: 2px;
+  border-radius: 10%;
+}
+
+.notes a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+  font-size: 16px;
+
+}
+
+.notes:hover {
+  padding: 3px;
+}
+
+.thin-pipe {
+  font-weight: 400;
+}
