@@ -17,6 +17,8 @@
 
     <h4 class="f3"><a href="https://github.com/jlord/git-it" target="_blank">Git-it</a> <span class="thin-pipe">|</span> <span class="notes"><a href="git-it-notes.html">Notes</a></span></h4>
 
+    <h4 class="f3"><a href="http://rogerdudler.github.io/git-guide" target="_blank">Git - The Simple Guide</a> <span class="thin-pipe">|</span> <span class="notes"><a href="simple-guide-notes.html">Notes</a></span></h4>
+
     <h2 class="f1">Commands</h2>
 
     <!-- Configuration -->
@@ -134,6 +136,41 @@
     <p class="description"><strong>Delete a remote branch</strong></p>
     <p class="code">git push &lt;REMOTENAME&gt; --delete &lt;BRANCHNAME&gt;</p>
 
+    <!-- Log -->
+    <h3 class="f2">Log</h3>
+
+    <p class="description"><strong>View repository history</strong></p>
+    <p class="code">git log</p>
+
+    <p class="description"><strong>View only the commits of a certain author</strong></p>
+    <p class="code">git log --author=username</p>
+
+    <p class="description"><strong>View compressed version of log where each commit is one line</strong></p>
+    <p class="code">git log --pretty=oneline</p>
+
+    <p class="description"><strong>View log as an ASCII art tree of all the branches, decorated with the names of tags and branches</strong></p>
+    <p class="code">git log --graph --oneline --decorate --all</p>
+
+    <p class="description"><strong>View long for only files which have changed</strong></p>
+    <p class="code">git log --name-status</p>
+
+    <p class="description"><strong>View manual page for more info on <span class="code-span">git log</span> command options and usage</strong></p>
+    <p class="code">git log --help</p>
+
+    <!-- Useful Hints -->
+    <h3 class="f2">Useful Hints</h3>
+
+    <p class="description"><strong>Built-in Git GUI</strong></p>
+    <p class="code">gitk</p>
+
+    <p class="description"><strong>Use colorful Git output</strong></p>
+    <p class="code">git config color.ui true</p>
+
+    <p class="description"><strong>Show log on just one line per commit</strong></p>
+    <p class="code">git config format.pretty oneline</p>
+
+    <p class="description"><strong>Use interactive adding</strong></p>
+    <p class="code">git add -i</p>
 
   </div>
 

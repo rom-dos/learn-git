@@ -55,3 +55,11 @@ footer {
 .thin-pipe {
   font-weight: 400;
 }
+
+.code-span {
+  background-color: #e3dacd;
+  padding: 3px;
+  display: inline-block;
+  border-radius: 2%;
+  font-family: Consolas, monaco, monospace;
+}

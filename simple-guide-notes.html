@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Git - The Simple Guide Notes</title>
+  <link rel="stylesheet" href="resources/css/tachyons-font-family.css">
+  <link rel="stylesheet" href="resources/css/tachyons-type-scale.css">
+  <link rel="stylesheet" href="resources/css/main.css">
+</head>
+<body>
+  <div class="container sans-serif">
+
+    <h4 class="f4"><a href="index.html">Back to home</a></h4>
+
+    <h1 class="mega">Git - The Simple Guide Notes</h1>
+
+    <h4 class="f4"><a href="http://rogerdudler.github.io/git-guide" target="_blank">Git - The Simple Guide</a></h4>
+
+    <h2 class="f2">Workflow</h2>
+
+    <p class="pmax">Your local repository consists of three <strong>trees</strong> maintained by Git. The first one is your <strong>Working Directory</strong> which holds the actual files. The second one is the <strong>Index</strong> which acts as a staging area and finally the <strong>HEAD</strong> which points to the last commit you've made.</p>
+
+    <h2 class="f2">Branching</h2>
+
+    <p class="pmax">A branch is <em>not available to others</em> unless you push the branch to your remote repository.</p>
+
+    <h2 class="f2">Update & Merge</h2>
+
+    <p class="pmax">In both cases of using <span class="code-span">pull</span> and <span class="code-span">merge</span>, Git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by Git. After changing you need to mark them as merged with:</p>
+
+    <p class="code">git add &lt;filename&gt;</p>
+
+    <p class="pmax">Before merging changes, you can also preview them by using:</p>
+
+    <p class="code">git diff &lt;source_branch&gt; &lt;target_branch&gt;</p>
+
+    <h2 class="f2">Tagging</h2>
+
+    <p class="pmax">It's recommended to create tags for software releases. This is a known concept, which also exists in SVN. You can create a new tag named <em>1.0.0</em> by executing:</p>
+
+    <p class="code">git tag 1.0.0 1b2e1d63ff</p>
+
+    <p class="pmax">The <em>1b2e1d63ff</em> stands for the first 10 characters of the commit ID you want to reference with your tag. You can get the commit ID by looking at the log.</p>
+
+    <h2 class="f2">Replace local changes</h2>
+
+    <p class="pmax">You can replace local changes using the command:
+
+    <p class="code">git checkout -- &lt;filename&gt;</p>
+
+    <p class="pmax">This replaces the changes in your working tree with the last content in <strong>HEAD</strong>. Changes already added to the index, as well as new files, will be kept.</p>
+
+    <br>
+
+    <p class="pmax">If you instead want to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it like this:</p>
+
+    <p class="code">git fetch origin <br>
+    git reset --hard origin/master
+    </p>
+
+
+  </div>
+
+  <footer>
+    <p class="sans-serif f4">Built by ROM-DOS</p>
+  </footer>
+</body>
+</html>
