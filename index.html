@@ -48,7 +48,7 @@
     <p class="description"><strong>Navigate into an existing folder (aka change directory)</strong></p>
     <p class="code">cd &lt;FOLDERNAME&gt;</p>
 
-    <p class="description"><strong>Create a new Git instance for a project</strong></p>
+    <p class="description"><strong>Create a new repository</strong></p>
     <p class="code">git init</p>
 
     <h3 class="f2">Clone</h3>
@@ -74,11 +74,17 @@
     <p class="description"><strong>Add all file's changes</strong></p>
     <p class="code">git add .</p>
 
+    <p class="description"><strong>Remove/delete file from INDEX (staging area)</strong></p>
+    <p class="code">git rm &lt;FILENAME&gt;</p>
+
     <p class="description"><strong>Commit changes to the repo's history with a short description of the changes</strong></p>
     <p class="code">git commit -m "&lt;your commit message&gt;"</p>
 
     <p class="description"><strong>View changes to files (since last commit)</strong></p>
     <p class="code">git diff</p>
+
+    <p class="description"><strong>View changes between two branches</strong></p>
+    <p class="code">git diff &lt;SOURCE_BRANCH&gt; &lt;TARGET_BRANCH&gt;</p>
 
     <!-- Remote Connections -->
     <h3 class="f2">Remote Connections</h3>
@@ -127,6 +133,18 @@
     <p class="description"><strong>Merge a branch into current branch</strong></p>
     <p class="code">git merge &lt;BRANCHNAME&gt;</p>
 
+    <!-- Tagging -->
+    <h3 class="f2">Tagging</h3>
+
+    <p class="description"><strong>Create tag</strong></p>
+    <p class="code">git tag &lt;tag&gt; &lt;COMMIT ID&gt;</p>
+
+    <p class="description">e.g.</p>
+    <p class="code">git tag 1.0.0 1b2e1d63ff</p>
+
+    <p class="description"><strong>Get commit IDs</strong></p>
+    <p class="code">git log</p>
+
     <!-- Deletion -->
     <h3 class="f2">Deletion</h3>
 
@@ -156,6 +174,12 @@
 
     <p class="description"><strong>View manual page for more info on <span class="code-span">git log</span> command options and usage</strong></p>
     <p class="code">git log --help</p>
+
+    <!-- Restore -->
+    <h3 class="f2">Restore</h3>
+
+    <p class="description"><strong>Replace working copy with latest from HEAD</strong></p>
+    <p class="code">git checkout -- &lt;FILENAME&gt;</p>
 
     <!-- Useful Hints -->
     <h3 class="f2">Useful Hints</h3>
