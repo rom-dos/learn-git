@@ -63,3 +63,13 @@ footer {
   border-radius: 2%;
   font-family: Consolas, monaco, monospace;
 }
+
+/* Lists --------------------------- */
+
+ul {
+  margin-left: 12%;
+}
+
+li {
+  text-align: left;
+}
