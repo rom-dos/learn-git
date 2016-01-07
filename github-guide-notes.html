@@ -16,8 +16,46 @@
 
     <h4 class="f4"><a href="https://guides.github.com/" target="_blank">GitHub Guides</a></h4>
 
-    
+    <p class="pmax">This is a collection of brief notes culled from the GitHub Guides. While they are all quite short tutorials (a 3 - 10 minute read each), particularly worth checking out are <a href="https://guides.github.com/introduction/flow/index.html" target="_blank">Understanding the GitHub Flow</a>, <a href="https://guides.github.com/features/pages/" target="_blank">Getting Started with GitHub Pages</a>, and <a href="https://guides.github.com/features/issues/" target="_blank">Mastering Issues</a>.</p>
 
+    <!-- Understanding the GitHub Flow  -->
+    <h2 class="f1"><a href="https://guides.github.com/introduction/flow/index.html" target="_blank">Understanding the GitHub Flow</a></h2>
+
+    <h3 class="f2">Create a branch</h3>
+
+    <p class="pmax">When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the <span class="code-span">master</span> branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.</p>
+
+    <br>
+
+    <p class="pmax">Branching is a core concept in Git, and the entire GitHub Flow is based upon it. There's only one rule: anything in the <span class="code-span">master</span> branch is always deployable.</p>
+
+    <br>
+
+    <p class="pmax">Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive (e.g., <span class="code-span">refactor-authentication</span>, <span class="code-span">user-content-cache-key</span>, <span class="code-span">make-retina-avatars</span>), so that others can see what is being worked on.</p>
+
+    <h3 class="f2">Add commits</h3>
+
+    <p class="pmax">Each commit is considered a separate unit of change. This lets you roll back changes if a bug is found, or if you decide to head in a different direction.</p>
+
+    <h3 class="f2">Open a Pull Request</h3>
+
+    <p class="pmax">You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams.</p>
+
+    <h3 class="f2">Discuss and review your code</h3>
+
+    <p class="pmax">Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.</p>
+
+    <h3 class="f2">Deploy</h3>
+
+    <p class="pmax">Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.</p>
+
+    <h3 class="f2">Merge</h3>
+
+    <p class="pmax">Once merged, Pull Requests preserve a record of the historical changes to your code. Because they're searchable, they let anyone go back in time to understand why and how a decision was made.</p>
+
+    <br>
+
+    <p class="pmax">By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase <span class="code-span">Closes #32</span> would close issue number 32 in the repository.</p>
 
   </div>
 
