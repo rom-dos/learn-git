@@ -4,13 +4,39 @@ body {
   margin: 0;
 }
 
+header {
+  height: 250px;
+  display: block;
+  width: 100%;
+  border-radius: 0 0 2% 2%;
+  box-shadow: 5px 3px 4px #ddd;
+}
+
+h1 {
+  padding-top: 20;
+  padding-left: 40px;
+  color: white;
+  text-align: left;
+  font-weight: 100;
+}
+
+.linear-1 {
+  background: -webkit-linear-gradient(to right, #a8c3bd, #cfb9ba 90%);
+  background:    -moz-linear-gradient(to right, #a8c3bd, #cfb9ba 90%);
+  background:         linear-gradient(to right, #a8c3bd, #cfb9ba 90%);
+}
+
 .container  {
   margin: auto;
   max-width: 600px;
 }
 
+h2:first-child {
+  margin-top: 80px;
+}
+
 .code {
-  background-color: #e3dacd;
+  background-color: #f7f6f4;
   padding: 15px;
   display: inline-block;
   border-radius: 6px;
